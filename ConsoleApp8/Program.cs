@@ -10,14 +10,12 @@ namespace ConsoleApp8
     {
         static void Main(string[] args)
         {
-            string text = "Учиться, учится и еще раз учится.";
-            char[] separators = new char[] { ' ', ',', '.' };
-
-            string[] words = text.Split (separators,StringSplitOptions.RemoveEmptyEntries);
+            string text = "Учиться учится и еще раз учится";
+            string[] words = text.Split(' ');
 
             foreach (string word in words)
             {
-                Console.WriteLine($"подстрока: {word}");
+                Console.WriteLine(word);
             }
         }
     }
